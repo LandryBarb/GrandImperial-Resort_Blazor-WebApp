@@ -1,5 +1,5 @@
 ﻿# GrandImperial-Resort_Blazor-WebApp
-# DevLog - Initial Project Creation
+# DevLog - 2022-2-20 Initial Project Creation
  <ul>
   <li>
     Feature Folder Setup
