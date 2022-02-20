@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+:root{
+    /**Colors**/
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+    /**End Colors**/
+    /**Font Sizes**/
+    @each $screen-size, $font-size in $type-scale {
+        @each $size, $value in $font-size{
+            --fs-#{$size}: #{$value};
+        }
+    }
+    /**End Font Sizes**/
+}

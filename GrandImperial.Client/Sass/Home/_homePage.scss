@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.video-wrapper{
+    position: relative;
+height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#intro-video{
+object-fit: cover;
+height: 100%;
+width: 100%;
+
+    position: absolute;
+  top: 0;
+  left: 0;
+  
+    z-index: 3;
+}
+
+section{
+    height: 100vh;
+}

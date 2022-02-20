@@ -1,0 +1,6 @@
+@use './functions' as *;
+
+@mixin  dynamicColor($color) {
+    background: $color;
+    color: text-clr($color);
+}

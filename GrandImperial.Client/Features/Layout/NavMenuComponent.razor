@@ -1,0 +1,19 @@
+﻿
+
+		
+			<li class="nav_list_item">
+				<NavLink href="@NavMenu.Url" class="nav_list_link" ActiveClass="active" Match="NavLinkMatch.All">
+					@NavMenu.Name
+				</NavLink>
+			</li>
+
+
+
+
+@code {
+	[Parameter]
+	public NavMenu NavMenu { get; set; } = default!;
+
+
+	
+}

@@ -1,0 +1,33 @@
+﻿@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: 5rem .5fr 1fr 5rem;
+    width: 100%;
+    @include dynamicColor($dark);
+   z-index: 10;
+    position: fixed;
+
+    .logo {
+        grid-column: 2;
+    }
+
+    .nav {
+        grid-column: 3;
+
+        &_list {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+
+            &_item {
+                list-style: none;
+            }
+        }
+    }
+}

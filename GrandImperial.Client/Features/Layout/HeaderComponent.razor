@@ -1,0 +1,51 @@
+﻿
+@inject HttpClient http
+
+<header class="header">
+	<div class="logo">Grand Imperial</div>
+
+
+
+	@if (_navMenus == null)
+{
+	<p>Loading....</p>
+}
+else
+{
+	<nav class="nav">
+	<div class="nav_icon">
+		<div class="line line_1"></div>
+		<div class="line line_2"></div>
+		<div class="line line_3"></div>
+
+	</div>
+	<ul class="nav_list">
+		@foreach (var navItem in _navMenus)
+		{
+			<NavMenuComponent NavMenu ="navItem"/>
+
+		}
+
+	</ul>
+
+</nav>
+
+}
+
+</header>
+
+@code {
+	private IEnumerable<NavMenu>? _navMenus;
+
+	protected override async Task OnInitializedAsync()
+	{
+		try
+		{
+			_navMenus = await http.GetFromJsonAsync<IEnumerable<NavMenu>>("data/nav-menu.json");
+		}
+		catch (HttpRequestException ex)
+		{
+			Console.WriteLine($"There was a problem loading the trail data: {ex.Message}");
+		}
+	}
+}

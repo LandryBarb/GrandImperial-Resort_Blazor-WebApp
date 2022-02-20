@@ -1,0 +1,39 @@
+@use '../abstracts' as *; 
+
+//1 rem == 10px
+$type-scale:(
+    standard:(
+        50: .5rem,
+        100: 1rem,
+        125: 1.25rem,
+        150: 1.5rem,
+        175: 1.75rem,
+        200: 2rem,
+        225: 2.25rem,
+        250: 2.5rem,
+        275: 2.75rem,
+        300: 3rem,
+        325: 3.25rem,
+        350: 3.50rem,
+        375: 3.75rem,
+        400: 4rem,
+        425: 4.25rem,
+        450: 4.50rem,
+        475: 4.75rem,
+        500: 5rem
+    )
+);
+
+@each $color, $shades in $colors{
+    /**#{$color} Colors**/
+    @each $shade, $value in $shades {
+        .txt_#{$color}_#{$shade}{
+            color: $value;
+        }
+        .bg_#{$color}_#{$shade}{
+            background-color: $value;
+        }
+    }
+        /** End #{$color} Colors**/
+
+}

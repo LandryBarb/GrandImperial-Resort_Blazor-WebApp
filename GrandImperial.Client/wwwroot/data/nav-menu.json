@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "About",
+    "url": "about"
+
+  },
+  {
+    "id": 2,
+    "name": "experiences",
+    "url": "experiences"
+
+  },
+  {
+    "id": 3,
+    "name": "rooms",
+    "url": "rooms"
+
+  },
+  {
+    "id": 4,
+    "name": "activities",
+    "url": "activities"
+
+  },
+  {
+    "id": 5,
+    "name": "reservations",
+    "url": "resrvations"
+
+  },
+  {
+    "id": 6,
+    "name": "contact",
+    "url": "contact"
+
+  }
+]
