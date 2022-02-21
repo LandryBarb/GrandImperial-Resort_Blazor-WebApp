@@ -12,3 +12,8 @@
 @mixin text-shadow {
     text-shadow: .1rem .2rem .4rem var(--clr-dark-100);
 }
+
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}

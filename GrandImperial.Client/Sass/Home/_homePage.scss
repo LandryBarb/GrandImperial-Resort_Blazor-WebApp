@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-.video-wrapper{
+.video_wrapper{
     position: relative;
 height: 100vh;
     overflow: hidden;
@@ -15,7 +15,7 @@ height: 100vh;
    
 }
 
-.glass{
+.video_text{
     position: absolute;
     top: 0;
     left:0;
@@ -68,3 +68,70 @@ width: 100%;
 section{
     height: 100vh;
 }
+/****Section 2****/
+.section_2{
+    
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row-reverse;
+   @include dynamicColor($light);
+
+    .section_text_container{
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        @include flex-center;
+        padding: 10rem;
+       
+        
+
+        h3{
+            font-family: $ff-heading;
+            font-size: var(--fs-400);
+            font-weight: 300;
+            text-transform: uppercase;
+            color: var(--clr-accent-200);
+   
+        }
+        p{
+            font-size: var(--fs-150);
+            font-family: $ff-body;
+            font-style: italic;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 5rem;
+            
+        }
+    }
+    .section_img_container{
+        position: relative;
+        flex: 1 1;
+     
+        
+
+        .img{
+            width: 32rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            box-shadow: 0 3rem 6rem $dark;
+            border-radius: .4rem;
+            border: .2rem solid $accent;
+
+            &_1{
+                transform: translate(-20%, -100%);
+            }
+            &_2{
+                transform: translate(-90%, -70%);
+            }
+            &_3{
+                transform: translate(-40%, -30%);
+            }
+            &_4{
+                transform: translate(-100%, -0%);
+            }
+        }
+    }
+}
+
+/****End Section 2****/
