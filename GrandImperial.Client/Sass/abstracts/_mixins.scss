@@ -4,3 +4,11 @@
     background: $color;
     color: text-clr($color);
 }
+
+@mixin transition-base{
+    transition: all .3s ease-in-out;
+}
+
+@mixin text-shadow {
+    text-shadow: .1rem .2rem .4rem var(--clr-dark-100);
+}

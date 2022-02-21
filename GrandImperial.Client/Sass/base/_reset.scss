@@ -62,6 +62,7 @@ body {
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
+
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
     white-space: revert;

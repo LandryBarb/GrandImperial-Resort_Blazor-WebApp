@@ -1,38 +1,52 @@
 [
   {
     "id": 1,
-    "name": "About",
-    "url": "about"
+    "name": "Home",
+    "url": "/",
+    "Description": "It starts here. take a tour",
+    "image":"sidebar/side1.jpg"
+
 
   },
   {
     "id": 2,
-    "name": "experiences",
-    "url": "experiences"
+    "name": "About",
+    "url": "about",
+    "description": "Our history began with a small step",
+    "image":"sidebar/side2.jpg"
+
 
   },
   {
     "id": 3,
-    "name": "rooms",
-    "url": "rooms"
+    "name": "Rooms",
+    "url": "rooms",
+    "description": "exclusive member specials",
+    "image":"sidebar/side3.jpg"
 
   },
   {
     "id": 4,
-    "name": "activities",
-    "url": "activities"
+    "name": "activites",
+    "url": "activities",
+    "description": "250+ activities to enjoy",
+    "image":"sidebar/side4.jpg"
 
   },
   {
     "id": 5,
     "name": "reservations",
-    "url": "resrvations"
+    "url": "resrvations",
+    "description": "Book your cabin today",
+    "image":"sidebar/side5.jpg"
 
   },
   {
     "id": 6,
     "name": "contact",
-    "url": "contact"
+    "url": "contact",
+    "description": "We love question. We're even better at answers",
+    "image":"sidebar/side6.jpg"
 
   }
 ]

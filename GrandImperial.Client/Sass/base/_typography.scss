@@ -24,6 +24,10 @@ $type-scale:(
     )
 );
 
+$ff-heading:'Tenor Sans', sans-serif;
+$ff-title: 'Julius Sans One', sans-serif;
+$ff-body: 'Raleway', sans-serif;
+
 @each $color, $shades in $colors{
     /**#{$color} Colors**/
     @each $shade, $value in $shades {
