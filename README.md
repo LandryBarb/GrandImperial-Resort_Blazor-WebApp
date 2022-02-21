@@ -9,8 +9,9 @@
   </li>
    <li>
    Main Layout setup
-  </li>
+    </li>
     </ul>
+    
 # DevLog - 2022-2-21 - Home Page 
 <ul>
  <li>
