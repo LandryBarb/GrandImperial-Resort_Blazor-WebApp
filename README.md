@@ -11,3 +11,20 @@
    Main Layout setup
   </li>
     </ul>
+# DevLog - 2022-2-21 - Home Page 
+<ul>
+ <li>
+  Restructed Sass Folders
+ </li>
+ <li>
+ Section 1 - Video Intro Markup  & Styles. 
+ </li>
+ <li>
+  Edited custom intro video
+ </li>
+ <li>
+  Implemented Navigation functionality
+ </li>
+ <li>
+  Added Image and Video assets
+ </li>
