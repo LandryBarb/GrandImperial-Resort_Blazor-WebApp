@@ -29,3 +29,6 @@
  <li>
   Added Image and Video assets
  </li>
+ <li>
+  Home Page - section 2- Markup & Styles
+ </li>
