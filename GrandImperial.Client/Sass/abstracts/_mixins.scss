@@ -1,4 +1,7 @@
+
 @use './functions' as *;
+
+
 
 @mixin  dynamicColor($color) {
     background: $color;
@@ -16,4 +19,18 @@
 @mixin flex-center {
     justify-content: center;
     align-items: center;
+}
+@mixin divider{
+    .small_divider{
+        width: 9rem;
+        height: .1rem;
+        margin: 1 auto 1rem auto;
+        background-color: var(--clr-accent-300);
+    }
+    .big_divider{
+        width: 20rem;
+        height: .1rem;
+        background-color: var(--clr-accent-300);
+
+    }
 }

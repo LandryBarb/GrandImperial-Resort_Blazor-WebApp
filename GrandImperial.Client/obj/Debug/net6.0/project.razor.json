@@ -305,6 +305,92 @@
         }
       },
       {
+        "HashCode": 1074756477,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Global.CommonHeaderComponent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CommonHeaderComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Global.CommonHeaderComponent"
+        }
+      },
+      {
+        "HashCode": -783695076,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Global.CommonHeaderComponent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Global.CommonHeaderComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Global.CommonHeaderComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -742956126,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Global.DividerComponent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DividerComponent"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Global.DividerComponent"
+        }
+      },
+      {
+        "HashCode": -1894664504,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Global.DividerComponent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Global.DividerComponent"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Global.DividerComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 641554235,
         "Kind": "Components.Component",
         "Name": "GrandImperial.Client.Features.Home.HomePage",
@@ -13708,6 +13794,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Global\\DividerComponent.razor",
+      "TargetPath": "Features\\Global\\DividerComponent.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Layout\\MainLayout.razor",
       "TargetPath": "Features\\Layout\\MainLayout.razor",
       "FileKind": "component"
@@ -13715,6 +13806,11 @@
     {
       "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Layout\\SideBarComponent.razor",
       "TargetPath": "Features\\Layout\\SideBarComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Global\\CommonHeaderComponent.razor",
+      "TargetPath": "Features\\Global\\CommonHeaderComponent.razor",
       "FileKind": "component"
     },
     {

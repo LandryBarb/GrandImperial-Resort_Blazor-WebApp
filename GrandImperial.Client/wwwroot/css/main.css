@@ -614,6 +614,30 @@ select {
   cursor: pointer;
 }
 
+.common_header {
+  padding: 5rem;
+  text-align: center;
+  color: #071e46;
+  font-family: "Tenor Sans", sans-serif;
+}
+.common_header .small_divider {
+  width: 9rem;
+  height: 0.1rem;
+  margin: 1 auto 1rem auto;
+  background-color: var(--clr-accent-300);
+}
+.common_header .big_divider {
+  width: 20rem;
+  height: 0.1rem;
+  background-color: var(--clr-accent-300);
+}
+.common_header .common_heading {
+  font-size: var(--fs-400);
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+/****Home Page - Section 1 - Intro****/
 .video_wrapper {
   position: relative;
   height: 100vh;
@@ -664,19 +688,14 @@ select {
   z-index: 3;
 }
 
-section {
-  height: 100vh;
-}
-
-/****Section 2****/
-.section_2 {
-  margin-inline: auto;
+/**** End - Section 1 - Intro****/
+/****Home Page - Section 2 - About****/
+.about_section {
   display: flex;
   flex-direction: row-reverse;
-  background: #e4e4dd;
-  color: #1f212e;
+  height: 50vh;
 }
-.section_2 .section_text_container {
+.about_section_container {
   flex: 0 1 50%;
   display: flex;
   flex-direction: column;
@@ -684,14 +703,33 @@ section {
   align-items: center;
   padding: 10rem;
 }
-.section_2 .section_text_container h3 {
+.about_section_container h3 {
   font-family: "Tenor Sans", sans-serif;
   font-size: var(--fs-400);
   font-weight: 300;
   text-transform: uppercase;
   color: var(--clr-accent-200);
 }
-.section_2 .section_text_container p {
+.about_section_container .divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+.about_section_container .divider .small_divider {
+  width: 9rem;
+  height: 0.1rem;
+  margin: 1 auto 1rem auto;
+  background-color: var(--clr-accent-300);
+}
+.about_section_container .divider .big_divider {
+  width: 20rem;
+  height: 0.1rem;
+  background-color: var(--clr-accent-300);
+}
+.about_section_container p {
   font-size: var(--fs-150);
   font-family: "Raleway", sans-serif;
   font-style: italic;
@@ -699,11 +737,25 @@ section {
   text-align: center;
   margin-bottom: 5rem;
 }
-.section_2 .section_img_container {
+.about_section_container .about_section_btn {
+  display: inline-block;
+  width: 15rem;
+  padding: 0.7rem 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #071e46;
+  background-color: transparent;
+  border: 0.1rem solid #071e46;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+.about_section_img_container {
   position: relative;
   flex: 1 1;
 }
-.section_2 .section_img_container .img {
+.about_section_img_container .img {
   width: 32rem;
   position: absolute;
   top: 50%;
@@ -712,20 +764,22 @@ section {
   border-radius: 0.4rem;
   border: 0.2rem solid #071e46;
 }
-.section_2 .section_img_container .img_1 {
+.about_section_img_container .img_1 {
   transform: translate(-20%, -100%);
 }
-.section_2 .section_img_container .img_2 {
+.about_section_img_container .img_2 {
   transform: translate(-90%, -70%);
 }
-.section_2 .section_img_container .img_3 {
+.about_section_img_container .img_3 {
   transform: translate(-40%, -30%);
 }
-.section_2 .section_img_container .img_4 {
+.about_section_img_container .img_4 {
   transform: translate(-100%, 0%);
 }
 
-/****End Section 2****/
+/****End - Section 2 - About****/
+/****Home Page - Section 3 - Rooms****/
+/****End  - Section 3 - Rooms****/
 #blazor-error-ui {
   background: lightyellow;
   bottom: 0;

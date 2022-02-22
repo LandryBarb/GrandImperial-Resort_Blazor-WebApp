@@ -1,7 +1,7 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
-
+<!--Home Page-->
 <!--SEction 1 -->
 <!--Video-->
 <div class="video_wrapper">
@@ -17,31 +17,56 @@
 <!--End Video-->
 <!--End SEction 1 -->
 
-<!--SEction 2 -->
+<!--SEction 2 About -->
 
-<section class="section_2">
-    <article class="section_text_container">
-        <h3>Take an Adventure</h3>
+<section class="about_section">
+    <article class="about_section_container">
+        <h3 class="about_section_heading">
+            Our Resort History
+        </h3>
+        <DividerComponent />
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque magnam illum necessitatibus saepe officia eveniet dolorem libero. Accusantium, minus maiores.
+            Founded in 1802 the Grand Imperial Resort is the ideal ski resort located on the snow covered mountains of
+            Silver Hills, Co...
         </p>
-    </article>
-    <div class="section_img_container">
-        <div class="img_1 img">
-            <img src="../images/home/section-2/img1.jpg" alt="image 1">
+        <a href="/about" class="about_section_btn btn">
+            Read More
+            <i class="fas fa-angle-double-right btn-arrow"></i>
+        </a>
+ </article>
+        <div class="about_section_img_container">
+            <div class="img_1 img">
+                <img src="../images/home/section-2/img1.jpg" alt="image 1">
+            </div>
+            <div class="img_2 img">
+                <img src="../images/home/section-2/img2.jpg" alt="image 2">
+            </div>
+            <div class="img_3 img">
+                <img src="../images/home/section-2/img3.jpg" alt="image 1">
+            </div>
+            <div class="img_4 img">
+                <img src="../images/home/section-2/img4.jpg" alt="image 2">
+            </div>
         </div>
-        <div class="img_2 img">
-            <img src="../images/home/section-2/img2.jpg" alt="image 2">
-        </div>
-          <div class="img_3 img">
-            <img src="../images/home/section-2/img3.jpg" alt="image 1">
-        </div>
-        <div class="img_4 img">
-            <img src="../images/home/section-2/img4.jpg" alt="image 2">
-        </div>
-    </div>
+   
 </section>
 <!--End SEction 2 -->
+
+<!--Home Page - Section 3  Rooms -->
+<section class="rooms">
+<CommonHeaderComponent Title="Accomadtions"/>
+<DividerComponent/>
+
+
+<div class="rooms_cards_wrapper">
+  
+</div>
+</section>
+
+<!--End - Section 3  Rooms -->
+
+
+<!--End Home Page-->
 
 @code {
 

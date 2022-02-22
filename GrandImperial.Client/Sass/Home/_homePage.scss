@@ -1,6 +1,8 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+/****Home Page - Section 1 - Intro****/
+
 .video_wrapper{
     position: relative;
 height: 100vh;
@@ -64,26 +66,23 @@ width: 100%;
   
     z-index: 3;
 }
+/**** End - Section 1 - Intro****/
 
-section{
-    height: 100vh;
-}
-/****Section 2****/
-.section_2{
+
+/****Home Page - Section 2 - About****/
+.about_section{
     
-    margin-inline: auto;
-    display: flex;
-    flex-direction: row-reverse;
-   @include dynamicColor($light);
+display: flex;
+flex-direction: row-reverse;
+height: 50vh;
 
-    .section_text_container{
+
+    &_container{
         flex: 0 1 50%;
         display: flex;
         flex-direction: column;
         @include flex-center;
-        padding: 10rem;
-       
-        
+        padding: 10rem;       
 
         h3{
             font-family: $ff-heading;
@@ -92,6 +91,16 @@ section{
             text-transform: uppercase;
             color: var(--clr-accent-200);
    
+        }
+        .divider{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 2rem;
+            margin-bottom: 2rem;
+            @include divider;
+            
         }
         p{
             font-size: var(--fs-150);
@@ -102,8 +111,26 @@ section{
             margin-bottom: 5rem;
             
         }
+        .about_section_btn{
+            display: inline-block;
+            width: 15rem;
+            padding: .7rem .5rem;
+            font-family: $ff-body;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+    
+            color: $accent;
+            background-color: transparent;
+            border: .1rem solid $accent;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        
     }
-    .section_img_container{
+
+    
+    &_img_container{
         position: relative;
         flex: 1 1;
      
@@ -133,5 +160,13 @@ section{
         }
     }
 }
+/****End - Section 2 - About****/
 
-/****End Section 2****/
+/****Home Page - Section 3 - Rooms****/
+.room{
+    
+}
+
+/****End  - Section 3 - Rooms****/
+
+
