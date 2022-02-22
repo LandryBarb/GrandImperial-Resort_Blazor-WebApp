@@ -9,8 +9,9 @@
   </li>
    <li>
    Main Layout setup
-  </li>
+    </li>
     </ul>
+    
 # DevLog - 2022-2-21 - Home Page 
 <ul>
  <li>
@@ -27,4 +28,7 @@
  </li>
  <li>
   Added Image and Video assets
+ </li>
+ <li>
+  Home Page - section 2- Markup & Styles
  </li>
