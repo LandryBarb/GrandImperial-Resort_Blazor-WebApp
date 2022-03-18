@@ -1,4 +1,6 @@
 ﻿# GrandImperial-Resort_Blazor-WebApp
+ ![home](https://user-images.githubusercontent.com/71806398/159094312-1f1da7d7-d5be-4cca-896e-00070755f98a.png)
+
 # DevLog - 2022-2-20 - Initial Project Creation
  <ul>
   <li>
