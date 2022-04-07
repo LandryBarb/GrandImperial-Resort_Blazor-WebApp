@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "image":"hotelrooms/room-single1.jpg",
+        "RoomName":"Single Queen Bed",
+        "Occupancy":"2",
+        "RoomRate":"199.99",
+        "Details":"Single room with queen sized bed",
+        "SqFt":"250"
+      
+    },
+    {
+        "id": 2,
+        "image":"hotelrooms/room-single2.jpg",
+        "RoomName":"Single King Bed",
+        "Occupancy":"2",
+        "RoomRate":"299.99",
+        "Details":"Single room with King sized bed",
+        "SqFt":"250"
+       
+    },
+    {
+        "id": 3,
+        "image":"hotelrooms/room-double1.jpg",
+        "RoomName":"Double Queen Bed",
+        "Occupancy":4,
+        "RoomRate":"399.99",
+        "Details":"Double queen sized bed",
+        "SqFt":"350"
+    },
+    {
+        "id": 4,
+        "image":"hotelrooms/room-double2.jpg",
+        "RoomName":"Double King Bed",
+        "Occupancy":4,
+        "RoomRate":"399.99",
+        "Details":"Double King sized bed",
+        "SqFt":"350"
+    }
+]

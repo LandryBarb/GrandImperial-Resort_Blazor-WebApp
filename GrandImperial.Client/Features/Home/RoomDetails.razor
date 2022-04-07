@@ -1,0 +1,97 @@
+@inject HttpClient http
+
+<div class="room_details_container @(isOpen ? "slide" : "")">
+    <div class="room_details_mask"></div>
+    <div class="room_details">
+        @if (activeRoom is not null)
+        {
+            <div class="room_details_content">
+
+                <img src="images/@activeRoom.Image" alt="@activeRoom.RoomName" class="main_image" />
+                <div class="room_details_info">
+
+                    <section class="room_desc">
+                        <h3 class="room_name">@activeRoom.RoomName</h3>
+                        <ul class="room_desc_list">
+                            <li>
+                               @activeRoom.Details
+                            </li>
+                            <li>
+                              SqFt: @activeRoom.SqFt
+
+                            </li>
+                            <li>
+                               Availabilty: @activeRoom.IsBooked
+
+                            </li>
+                        </ul>
+
+                    </section>
+                    <div class="image_gallery">
+                        @if (RoomImages != null)
+                        {
+                         
+
+
+                                @foreach (var roomImage in RoomImages.Where(x => x.HotelRoomId == activeRoom.Id))
+                                {
+                                       <figure class="gallery_image">
+                                    <img src="../images/@roomImage.RoomImageUrl" />
+</figure>
+                                }
+                            
+                        }
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="room_details_controls">
+                <button class="room_details_btn" @onclick="Close">
+                    Close
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private bool isOpen;
+    private HotelRoom? activeRoom;
+    [Parameter, EditorRequired]
+    public HotelRoom? HotelRoom { get; set; } = default!;
+
+    private IEnumerable<HotelRoomImage>? RoomImages;
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            RoomImages = await http.GetFromJsonAsync<IEnumerable<HotelRoomImage>>("data/hotel-room-image.json");
+        }
+        catch (HttpRequestException ex)
+        {
+
+            System.Console.WriteLine($"There was a problem loading the room data: {ex.Message}");
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        if (HotelRoom != null)
+        {
+            activeRoom = HotelRoom;
+            isOpen = true;
+        }
+    }
+    private void Close()
+    {
+        activeRoom = null;
+        isOpen = false;
+    }
+}
+}

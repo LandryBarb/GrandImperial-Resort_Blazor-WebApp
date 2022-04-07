@@ -3,44 +3,42 @@
 
 @if (memberMenus == null)
 {
-	 <p>Loading...</p>//add loading animation
+	<p>Loading...</p>
+	//add loading animation
 }
 else
 {
-<nav class="nav ">
+	<nav class="nav ">
 
-<div class="nav_icon @NavIconCssClass" @onclick="ToggleNav" >
-		<div class="line line_1"></div>
-		<div class="line line_2"></div>
-		<div class="line line_3"></div>
-		
-	</div>
+		<div class="nav_icon @NavIconCssClass" @onclick="ToggleNav">
+			<div class="line line_1"></div>
+			<div class="line line_2"></div>
+			<div class="line line_3"></div>
+		</div>
 
 		<ul class="nav_list @NavListCssClass">
-		@foreach (var navItem in memberMenus)
-		{
-			<li class="nav_list_item">
-				<NavLink href="@navItem.Url" class="nav_list_item_link" ActiveClass="active" Match="NavLinkMatch.All">
-					@navItem.Name
-				</NavLink>
-			</li>
+			@foreach (var navItem in memberMenus)
+			{
+				<li class="nav_list_item">
+					<NavLink href="@navItem.Url" class="nav_list_item_link" ActiveClass="active" Match="NavLinkMatch.All">
+						@navItem.Name
+					</NavLink>
+				</li>
 
-		}
-	
-	</ul>
-			
-</nav>
+			}
+		</ul>
 
-<SideBarComponent sideBar="@SideBarCssClass"
-				sideBarList="@SideBarListCssClass"
-				 />
+	</nav>
+
+	<SideBarComponent sideBar="@SideBarCssClass"
+				  sideBarList="@SideBarListCssClass" />
 }
 
-		
-	
 
 
-	
+
+
+
 
 @code {
 	private bool sidebar = true;
@@ -48,19 +46,19 @@ else
 	private bool navIcon = true;
 	private bool navList = true;
 
-private string? SideBarCssClass => sidebar ? null : "change";
-private string? NavIconCssClass => navIcon ? null : "change";
-private string? SideBarListCssClass => sidebarList ? null : "change";
-private string? NavListCssClass => navList ? null : "change";
+	private string? SideBarCssClass => sidebar ? null : "change";
+	private string? NavIconCssClass => navIcon ? null : "change";
+	private string? SideBarListCssClass => sidebarList ? null : "change";
+	private string? NavListCssClass => navList ? null : "change";
 
 
-private void ToggleNav()
-{
-	sidebar = !sidebar;
-	navIcon = !navIcon;
-	sidebarList = !sidebarList;
-	navList = !navList;
-}
+	private void ToggleNav()
+	{
+		sidebar = !sidebar;
+		navIcon = !navIcon;
+		sidebarList = !sidebarList;
+		navList = !navList;
+	}
 
 	private IEnumerable<MemberMenu>? memberMenus;
 

@@ -1,0 +1,123 @@
+@use '../abstracts'as *;
+@use '../base'as *;
+
+.room_details_mask {
+    visibility: hidden;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.room_details_container.slide>.room_details_mask {
+    opacity: .5;
+    visibility: visible;
+}
+
+.room_details {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    border-left: 0.063em solid gray;
+    z-index: 100;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease, width 0.3s ease;
+
+}
+
+
+.room_details_container.slide>.room_details {
+    transform: translateX(0);
+}
+
+.room_details_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .main_image{
+        
+    }
+}
+
+.room_details_info {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+
+    .room_desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: $ff-body;
+
+        .room_name {
+            font-size: var(--fs-250);
+        }
+
+        .room_desc_list {
+            display: flex;
+            flex-direction: column;
+            height: 10rem;
+            font-size: var(--fs-150);
+            align-items: end;
+            justify-content: space-between;
+        }
+    }
+
+    .image_gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+        grid-gap: 2rem;
+
+        img{
+            border-radius: 2rem;
+        }
+    }
+
+
+}
+
+.room_details_controls {
+text-align:  center;
+display: flex;
+justify-content: center;
+    .room_details_btn{
+        width: 20rem;
+        padding: 1.5rem 1rem;
+        margin: 4rem 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: $accent;
+        border: .2rem solid $light;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 1rem 2rem $accent;
+        @include transition-base;
+
+        &:hover{
+            color: $light;
+            background: $dark;
+        }
+    }
+    
+}

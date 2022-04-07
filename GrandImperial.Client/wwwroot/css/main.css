@@ -779,7 +779,219 @@ select {
 
 /****End - Section 2 - About****/
 /****Home Page - Section 3 - Rooms****/
+.rooms_cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rooms_cards_wrapper .room_card {
+  width: 60rem;
+  margin: 3rem;
+  background: #1f212e;
+  color: #e4e4dd;
+  box-shadow: 0 3rem 6rem #071e46;
+}
+.rooms_cards_wrapper .room_card .room_image {
+  width: 100%;
+}
+.rooms_cards_wrapper .room_card_content {
+  padding: 2.5rem;
+}
+.rooms_cards_wrapper .room_card_heading {
+  margin: 0;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: var(--fs-300);
+  font-weight: 300;
+}
+.rooms_cards_wrapper .room_card_details {
+  font-size: var(--fs-150);
+}
+.rooms_cards_wrapper .room_card_price {
+  font-size: var(--fs-400);
+  font-weight: 300;
+  text-align: right;
+  margin: 0;
+}
+.rooms_cards_wrapper .room_card_price sup {
+  font-size: var(--fs-350);
+}
+.rooms_cards_wrapper .room_card_occupancy {
+  font-size: var(--fs-300);
+  font-weight: 300;
+  text-align: left;
+  margin: 0;
+}
+.rooms_cards_wrapper .room_card_sqft {
+  font-size: var(--fs-200);
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+.rooms_cards_wrapper .room_card_btn {
+  display: inline-block;
+  width: 15rem;
+  padding: 1.5rem 1rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #e4e4dd;
+  border: 0.1rem solid #e4e4dd;
+  border-radius: 10rem;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+.rooms_cards_wrapper .room_card_btn .btn_arrow {
+  margin-left: 0.5rem;
+  transition: margin-left 0.4s;
+}
+.rooms_cards_wrapper .room_card_btn:hover .btn_arrow {
+  margin-left: 1.5rem;
+}
+.rooms_cards_wrapper .room_card_detail_btn {
+  display: inline-block;
+  width: 15rem;
+  padding: 1.5rem 1rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #e4e4dd;
+  border: 0.1rem solid #e4e4dd;
+  border-radius: 10rem;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 22rem;
+}
+.rooms_btn_wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.rooms_btn_wrapper .rooms_btn {
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  margin: 4rem 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #071e46;
+  border: 0.2rem solid #e4e4dd;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 3rem 6rem #071e46;
+  transition: all 0.3s ease-in-out;
+}
+.rooms_btn_wrapper .rooms_btn:hover {
+  color: #e4e4dd;
+  background: #1f212e;
+}
+
 /****End  - Section 3 - Rooms****/
+.room_details_mask {
+  visibility: hidden;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.room_details_container.slide > .room_details_mask {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.room_details {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+  border-left: 0.063em solid gray;
+  z-index: 100;
+  transform: translateX(-110%);
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.room_details_container.slide > .room_details {
+  transform: translateX(0);
+}
+
+.room_details_content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.room_details_info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+.room_details_info .room_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.room_details_info .room_desc .room_name {
+  font-size: var(--fs-250);
+}
+.room_details_info .room_desc .room_desc_list {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  font-size: var(--fs-150);
+  align-items: end;
+  justify-content: space-between;
+}
+.room_details_info .image_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-gap: 2rem;
+}
+.room_details_info .image_gallery img {
+  border-radius: 2rem;
+}
+
+.room_details_controls {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.room_details_controls .room_details_btn {
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  margin: 4rem 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #071e46;
+  border: 0.2rem solid #e4e4dd;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem #071e46;
+  transition: all 0.3s ease-in-out;
+}
+.room_details_controls .room_details_btn:hover {
+  color: #e4e4dd;
+  background: #1f212e;
+}
+
 #blazor-error-ui {
   background: lightyellow;
   bottom: 0;

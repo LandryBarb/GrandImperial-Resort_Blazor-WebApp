@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Global/ButtonComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR2xvYmFsXEJ1dHRvbkNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Global/CommonHeaderComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR2xvYmFsXENvbW1vbkhlYWRlckNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Home/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcSG9tZVxIb21lUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Home/HotelRoomCard.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcSG9tZVxIb3RlbFJvb21DYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Home/RoomDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcSG9tZVxSb29tRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/FooterComponent.razor]

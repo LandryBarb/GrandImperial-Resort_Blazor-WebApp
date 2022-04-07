@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject HttpClient http
 
 <PageTitle>Home</PageTitle>
 <!--Home Page-->
@@ -33,34 +34,53 @@
             Read More
             <i class="fas fa-angle-double-right btn-arrow"></i>
         </a>
- </article>
-        <div class="about_section_img_container">
-            <div class="img_1 img">
-                <img src="../images/home/section-2/img1.jpg" alt="image 1">
-            </div>
-            <div class="img_2 img">
-                <img src="../images/home/section-2/img2.jpg" alt="image 2">
-            </div>
-            <div class="img_3 img">
-                <img src="../images/home/section-2/img3.jpg" alt="image 1">
-            </div>
-            <div class="img_4 img">
-                <img src="../images/home/section-2/img4.jpg" alt="image 2">
-            </div>
+    </article>
+    <div class="about_section_img_container">
+        <div class="img_1 img">
+            <img src="../images/home/section-2/img1.jpg" alt="image 1">
         </div>
-   
+        <div class="img_2 img">
+            <img src="../images/home/section-2/img2.jpg" alt="image 2">
+        </div>
+        <div class="img_3 img">
+            <img src="../images/home/section-2/img3.jpg" alt="image 1">
+        </div>
+        <div class="img_4 img">
+            <img src="../images/home/section-2/img4.jpg" alt="image 2">
+        </div>
+    </div>
+
 </section>
 <!--End SEction 2 -->
 
 <!--Home Page - Section 3  Rooms -->
-<section class="rooms">
-<CommonHeaderComponent Title="Accomadtions"/>
-<DividerComponent/>
+<section class="rooms" id="rooms">
+    <CommonHeaderComponent Title="Accomadtions" />
+    <DividerComponent />
 
+    @if (hotelRooms == null)
+    {
+        <p>Loading ...</p>
+    }
+    else
+    {
 
-<div class="rooms_cards_wrapper">
-  
-</div>
+        <RoomDetails HotelRoom="selectedRoom" />
+        <div class="rooms_cards_wrapper">
+            @foreach (var room in hotelRooms)
+            {
+                <HotelRoomCard Room="room" OnSelected="HandleRoomSelected" />
+            }
+
+        </div>
+    }
+            @* <div class="rooms_btn_wrapper">
+                <a href="" class="rooms_btn">
+                Check All Rooms
+                </a>
+                </div> *@
+
+    <ButtonComponent CssClass="rooms_btn_wrapper" NavDir="/" LinkClass="rooms_btn" Name="Check All Rooms" />
 </section>
 
 <!--End - Section 3  Rooms -->
@@ -69,5 +89,25 @@
 <!--End Home Page-->
 
 @code {
+    private IEnumerable<HotelRoom>? hotelRooms;
+    private HotelRoom? selectedRoom;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            hotelRooms = await http.GetFromJsonAsync<IEnumerable<HotelRoom>>("data/hotel-room.json");
+        }
+        catch (HttpRequestException ex)
+        {
+
+            System.Console.WriteLine($"There was a problem loading the room data: {ex.Message}");
+        }
+    }
+
+    private void HandleRoomSelected(HotelRoom room)
+
+    => selectedRoom = room;
+
 
 }

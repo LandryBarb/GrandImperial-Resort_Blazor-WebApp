@@ -163,8 +163,121 @@ height: 50vh;
 /****End - Section 2 - About****/
 
 /****Home Page - Section 3 - Rooms****/
-.room{
+.rooms{
     
+    &_cards_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .room_card{
+            width: 60rem;
+            margin: 3rem;
+            @include dynamicColor($dark);
+            box-shadow: 0 3rem 6rem $accent;
+          
+            .room_image{
+                width: 100%;
+            }
+            &_content{
+                padding: 2.5rem;
+            }
+            &_heading{
+                margin: 0;
+                font-family: $ff-heading;
+                font-size: var(--fs-300);
+                font-weight: 300;
+            }
+            &_details{
+                font-size: var(--fs-150);
+            }
+            &_price{
+                font-size: var(--fs-400);
+                font-weight: 300;
+                text-align: right;
+                margin: 0;
+                sup{
+                    font-size: var(--fs-350);
+                }
+            }
+            &_occupancy{
+                font-size: var(--fs-300);
+                font-weight: 300;
+                text-align: left;
+                margin: 0;
+            }
+            &_sqft{
+                font-size: var(--fs-200);
+                font-weight: 300;
+                text-align: center;
+                margin: 0;
+            }
+
+            &_btn{
+                display: inline-block;
+                width: 15rem;
+                padding: 1.5rem 1rem;
+                font-family: $ff-body;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: $light;
+                border: .1rem solid $light;
+                border-radius: 10rem;
+                outline: none;
+                cursor: pointer;
+                text-align: center;
+
+                .btn_arrow{
+                    margin-left: .5rem;
+                    transition: margin-left .4s;
+                }
+                &:hover .btn_arrow{
+                    margin-left:  1.5rem;
+                }
+            }
+            &_detail_btn{
+                display: inline-block;
+                width: 15rem;
+                padding: 1.5rem 1rem;
+                font-family: $ff-body;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: $light;
+                border: .1rem solid $light;
+                border-radius: 10rem;
+                outline: none;
+                cursor: pointer;
+                text-align: center;
+                margin-left: 22rem;
+            }
+        }
+        
+    }
+    &_btn_wrapper{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        .rooms_btn{
+            width: 20rem;
+            padding: 1.5rem 1rem;
+            margin: 4rem 0;
+            background-color: transparent;
+            text-transform: uppercase;
+            color: $accent;
+            border: .2rem solid $light;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 0 3rem 6rem $accent;
+            @include transition-base;
+
+            &:hover{
+                color: $light;
+                background: $dark;
+            }
+
+        }
+    }
 }
 
 /****End  - Section 3 - Rooms****/

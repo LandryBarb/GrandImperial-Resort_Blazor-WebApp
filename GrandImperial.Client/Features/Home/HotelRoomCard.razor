@@ -1,0 +1,29 @@
+ <div class="room_card">
+            <img src="../images/@Room.Image" alt="@Room.RoomName" class="room_image"/>
+            <article class="room_card_content">
+                <h4 class="room_card_heading">@Room.RoomName</h4>
+                <p class="room_card_details">
+                    @Room.Details
+                </p>
+                <p class="room_card_price">
+                    <sup>$</sup>@Room.RoomRate<sub>/per night</sub>
+                </p>
+                @* <p class="room_card_occupancy">Occupancy: @room.Occupancy</p>
+                <p class="room_card_sqft">Sq Ft: @room.SqFt</p> *@
+                <a href="#" class="room_card_btn btn">
+                    Book Now
+                      <i class="fas fa-angle-double-right btn-arrow"></i>
+                </a>
+                  <a href="" class="room_card_detail_btn btn" @onclick="@(async () => await OnSelected.InvokeAsync(Room))" >
+                    More
+                      <i class="fas fa-angle-double-right btn-arrow"></i>
+                </a>
+            </article>
+        </div>
+
+        @code{
+            [Parameter, EditorRequired]
+            public HotelRoom Room {get;set;}= default!;
+            [Parameter]
+            public EventCallback<HotelRoom> OnSelected {get;set;}
+        }
