@@ -1,0 +1,24 @@
+﻿@use '../abstracts'as *;
+@use '../base'as *;
+
+.components{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+
+    .buttons{
+
+        .yellow{
+
+
+        }
+
+        .btn{
+            width:15em;
+            height:6em;
+            display:grid;
+            place-items:center;
+            background-color:var(--link-accent);
+        }
+    }
+}

@@ -2,6 +2,13 @@
 @use './functions' as *;
 
 
+@mixin flow {
+    
+}
+
+@mixin txtTransform ($key: captalize){
+    text-transform: $key;
+}
 
 @mixin  dynamicColor($color) {
     background: $color;
@@ -19,6 +26,11 @@
 @mixin flex-center {
     justify-content: center;
     align-items: center;
+}
+@mixin flex-column($direction: column, $justify:center, $align:center) {
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 @mixin divider{
     .small_divider{

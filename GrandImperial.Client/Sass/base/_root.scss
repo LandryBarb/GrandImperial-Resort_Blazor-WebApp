@@ -1,0 +1,69 @@
+@use '../abstracts' as *;
+@use '../base/typography' as *;
+@use '../layout' as *;
+
+@use '../media-queries/responsive' as *;
+
+:root {
+    /**Colors**/
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+    /**End Colors**/
+    /**Font Sizes**/
+    @each $screen-size, $font-size in $type-scale {
+        @if $screen-size == small {
+            @each $size, $value in $font-size {
+                --fs-#{$size}: #{$value};
+            }
+        }
+        @else {
+            @include mq(large) {
+                @each $size, $value in $font-size {
+                    --fs-#{$size}: #{$value};
+                }
+            }
+        }
+    }
+ /**End Font Sizes**/
+
+    /**Font Weights**/
+    @each $font-size, $value in $font-weights
+{
+    --fw-#{$font-size}:#{$value};
+  
+}
+    /**End Font Weights**/
+   
+
+    /**sPACING**/
+    @each $space-size, $names in $spacing 
+    {
+        @each $name, $value in $names
+        {
+            --sp-#{$name}:#{$value};
+        }
+    }
+    /**End sPACING**/
+
+@each $prop, $colors, $shades in $custom-props
+{
+    @each $color, $shades, $value in $colors
+    {
+        @each $shade, $value in $shades
+        {
+            --#{$prop}:hsl(var(--clr-#{$color}-#{$shade}));
+        }
+    }
+   
+}
+
+//    --body:var(--clr-primary-700);
+//    --link:var(--clr-primary-600);
+//    --link-accent:var(--clr-secondary-700);
+
+//    --button:var(--clr-secondary-700);
+}
+

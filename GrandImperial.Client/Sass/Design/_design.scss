@@ -1,0 +1,93 @@
+@use '../abstracts'as *;
+@use '../base'as *;
+
+
+
+.design {
+    background-color: var(--bg);
+    color: (--body);
+    min-height: 100vh;
+
+    .typography {
+        text-transform: capitalize;
+        display: grid;
+        grid-template-rows: repeat(6, min-content);
+        
+
+        small{
+            font-family: $ff-body;
+            font-weight: 600;
+        }
+        h6 {
+            font-weight: var(--fw-700);
+            grid-row: 1;
+        }
+
+        .font_families {
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--gap, var(--sp-sm-5));
+
+            p {
+                font-weight: var(--fw-700);
+                font-family: $ff-title;
+            }
+
+            .fonts {
+                grid-column: 1/-1;
+                grid-row: 3;
+                display: flex;
+                justify-content: space-around;
+
+               
+                .body{
+                    p{
+                        font-size: var(--fs-600);
+                    }
+                }
+            }
+        }
+    }
+
+    .headings{
+        grid-row: 4;
+        @include txtTransform(capitalize);
+    }
+
+    .links_container{
+        grid-row: 5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            @include flex-column;
+           
+        }
+        .hover{
+            color:var(--link-accent);
+            cursor: pointer;
+        }
+    }
+    .lists{
+        display: flex;
+        grid-row: 6;
+        display: flex;
+        @include flex-column($direction:row, $justify:space-around);
+    }
+
+    .colors{
+        display:flex;
+        @include flex-column;
+       width:100%;
+
+        .primary{
+            height:5rem;
+            width: 100%
+        }
+    }
+}

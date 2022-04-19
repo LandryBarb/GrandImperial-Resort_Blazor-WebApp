@@ -1,43 +1,185 @@
-@use '../abstracts' as *; 
+@use '../abstracts' as *;
+@use '../media-queries/responsive' as *;
 
-//1 rem == 10px
-$type-scale:(
-    standard:(
-        50: .5rem,
-        100: 1rem,
-        125: 1.25rem,
-        150: 1.5rem,
-        175: 1.75rem,
-        200: 2rem,
-        225: 2.25rem,
-        250: 2.5rem,
-        275: 2.75rem,
-        300: 3rem,
-        325: 3.25rem,
-        350: 3.50rem,
-        375: 3.75rem,
-        400: 4rem,
-        425: 4.25rem,
-        450: 4.50rem,
-        475: 4.75rem,
-        500: 5rem
-    )
-);
 
-$ff-heading:'Tenor Sans', sans-serif;
-$ff-title: 'Julius Sans One', sans-serif;
+@use "sass:math";
+
+$ff-heading:'Julius Sans One', sans-serif;
+$ff-title: 'Tenor Sans', sans-serif;
 $ff-body: 'Raleway', sans-serif;
 
-@each $color, $shades in $colors{
-    /**#{$color} Colors**/
-    @each $shade, $value in $shades {
-        .txt_#{$color}_#{$shade}{
-            color: $value;
-        }
-        .bg_#{$color}_#{$shade}{
-            background-color: $value;
+h1,h2,h3,h4,h5,h6{
+    font-family: $ff-heading;
+}
+
+$type-ratio:("minorSecond": 1.067,
+    "minorThird":1.2,
+    "majorThird": 1.25,
+    "perfectFourth":1.333,
+    "augmentedFourth": 1.414,
+    "perfectFifth": 1.5,
+    "goldenRatio": 1.69,
+    "custom": 1.93,
+    "custom-sm": 1.5,
+);
+
+
+
+@function type-ratio($key) {
+    @return map-get($type-ratio, $key)
+}
+
+
+
+
+$type-base-size: 1rem;
+
+
+$type-size-ratio:type-ratio("perfectFifth");
+$type-size-ratio-sm:type-ratio("minorSecond");
+
+$type-levels:
+6,
+5,
+4,
+3,
+2,
+1;
+
+
+
+$type-styles:();
+
+$level-size:$type-base-size;
+
+$type-scale:(
+    small:
+        (
+            200: $level-size * $type-size-ratio-sm,
+            300:($level-size + .1rem) * $type-size-ratio-sm,
+            400: ($level-size + .4rem) * $type-size-ratio-sm,
+            500: ($level-size + 1rem) * $type-size-ratio-sm,
+            600: ($level-size + 1.59rem) * $type-size-ratio-sm,
+            700: ($level-size + 2rem) * $type-size-ratio-sm,
+            800: ($level-size + 3rem) * $type-size-ratio-sm,
+
+           
+    ),
+    large:(
+        200: $level-size * $type-size-ratio,
+        300:($level-size + .1rem) * $type-size-ratio,
+        400: ($level-size + .4rem) * $type-size-ratio,
+            500: ($level-size + 1rem) * $type-size-ratio,
+            600: ($level-size + 1.59rem) * $type-size-ratio,
+            700: ($level-size + 2rem) * $type-size-ratio,
+          
+            800: ($level-size + 3rem) * $type-size-ratio,
+
+    )
+    );
+
+@each $screen-size, $font-size in $type-scale {
+    @if $screen-size == small {
+        @each $size, $value in $font-size {
+           .txt_#{$size}
+           {
+               font-size: #{$value};
+           }
         }
     }
-        /** End #{$color} Colors**/
+    @else {
+        @include mq(large) {
+            @each $size, $value in $font-size {
+                .txt_#{$size}
+                {
+                    font-size:$value;
+                }
+            }
+        }
+    }
+}
+
+@each $level in $type-levels {
+    $level-size: $level-size * $type-size-ratio;
+    $type-styles: map-merge($type-styles, (#{"h"}$level: $level-size));
+
+
+    //output heading styles
+    //Assign to element and create utilitiy class
+    h#{$level},
+    .h#{$level} {
+        //Fallback for browser non-support min/max
+        font-size: $level-size;
+        line-height: calc(2px + 2ex + 2px);
+        margin-bottom: 0.65em;
+
+        @if($type-size-ratio > 1.2) {
+            //Fluid TYPE sTYLES
+            //Remove Unit for calculations
+            $level-unitless: math.div($level-size, $level-size * 0 + 1);
+
+            // Set minimum size to a percentage less than $level-size
+            // Reduction is greater for large font sizes (> 4rem) to help
+            // prevent overflow due to font-size on mobile devices
+
+            $fluid-reduction: if($level-size > 4, 0.5, 0.33);
+            $fluid-min: $level-unitless - ($fluid-reduction * $level-unitless);
+
+            //Prevent dropping lower than 1rem (body font-size)
+            $fluid-min: if($fluid-min > $type-base-size, $fluid-min, 1);
+
+            // Adjust max modifier slightly per level to prevent "same" size
+            // or lower levels appearing larger than higher levels
+
+            $fluid-scaler: ($level-unitless - $fluid-min) + 4vw;
+
+            font-size: 
+            clamp(
+                #{$fluid-min}rem,
+                #{$fluid-scaler} + 1rem,
+                #{$level-size}
+            );
+
+           
+        }
+    }
+}
+
+@function type-style($key) {
+    @return map-get($type-styles, $key);
+}
+
+
+
+
+
+@each $color,
+$shades in $txt-colors {
+
+    /**#{$color} Text Colors**/
+    @each $shade,
+    $value in $shades {
+        .txt_#{$color}_#{$shade} {
+            color: hsl($value);
+        }
+
+        .bg_#{$color}_#{$shade} {
+            background-color: hsl($value);
+        }
+    }
+
+    /** End #{$color} Text Colors**/
 
 }
+
+//Font weights
+$font-weights:(
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+);
+

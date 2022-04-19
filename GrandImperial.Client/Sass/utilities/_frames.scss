@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../layout' as *;
+
+
+
+.container{
+    width: min(90ch, 100vw - 2rem);
+    margin-inline: auto;
+}
+
+.flow > *:where(:not(:first-child)){
+margin-top: var(--flow-space, $spacing-base);
+}
+

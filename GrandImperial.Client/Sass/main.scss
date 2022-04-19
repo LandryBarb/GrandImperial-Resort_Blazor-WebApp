@@ -1,14 +1,41 @@
-﻿@use './root/root'  ;
+﻿@use './base' as * ;
+@use './abstracts' as * ;
+
 
 
 @use './Layout' as * ;
-@use './common/' as *;
+@use './utilities/frames' as *;
+
+@use './Design/design' as *;
+@use './Design/components' as *;
+
+
 @use './Home' as * ;
 
 
 
 @use './media-queries/responsive';
 
+p{
+    font-size: var(--fs-300);
+    font-family: $ff-body;
+}
+
+a{
+    font-family: $ff-body;
+    font-weight: var(--fw-500);
+    color: var(--link);
+}
+li{
+    font-family: $ff-title;
+    letter-spacing: var(--sp-sm-7);
+    list-style: circle;
+}
+ol{
+    li{
+        list-style:decimal;
+    }
+}
 
 
 #blazor-error-ui {
@@ -39,3 +66,4 @@
 .blazor-error-boundary::after {
     content: "An error has occurred."
 }
+

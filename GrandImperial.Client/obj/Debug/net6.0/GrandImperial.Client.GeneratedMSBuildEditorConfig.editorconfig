@@ -22,16 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Global/ButtonComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR2xvYmFsXEJ1dHRvbkNvbXBvbmVudC5yYXpvcg==
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Design/ComponentsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGVzaWduXENvbXBvbmVudHNQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Global/CommonHeaderComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR2xvYmFsXENvbW1vbkhlYWRlckNvbXBvbmVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Global/DividerComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR2xvYmFsXERpdmlkZXJDb21wb25lbnQucmF6b3I=
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Design/DesignSystem.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGVzaWduXERlc2lnblN5c3RlbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Home/HomePage.razor]
@@ -46,28 +42,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcSG9tZVxSb29tRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/FooterComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcTGF5b3V0XEZvb3RlckNvbXBvbmVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/HeaderComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcTGF5b3V0XEhlYWRlckNvbXBvbmVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcTGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/NavMenuComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcTGF5b3V0XE5hdk1lbnVDb21wb25lbnQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/SideBarComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcTGF5b3V0XFNpZGVCYXJDb21wb25lbnQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Layout/SocialMediaComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcTGF5b3V0XFNvY2lhbE1lZGlhQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/_Imports.razor]
