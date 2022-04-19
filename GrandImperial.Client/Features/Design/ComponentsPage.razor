@@ -6,16 +6,97 @@
     <div class="buttons">
         <small>buttons</small>
         <div class="yellow">
-           
-            <div class="btn btn-secondary square">
-                Book Room
-            </div>
-             <div class="btn btn-secondary square ">
-     Book Room
- </div>
+
+          <BtnPrimary @attributes="BtnMainAttributes">
+              Book Room
+          </BtnPrimary>
+           <BtnPrimary @attributes="BtnMainAttributes"
+           >
+              Book Room
+          </BtnPrimary>
+           <BtnPrimary @attributes="BtnMainAttributes"
+            class="btn btn_main active">
+              Book Room
+          </BtnPrimary>
+           <BtnPrimary @attributes="BtnDisabledAttributes"
+            >
+              Book Room
+          </BtnPrimary>
+        </div>
+
+        <div class="poly">
+               <BtnPrimary @attributes="BtnPolyAttributes">
+              Book Room
+          </BtnPrimary>
+               <BtnPrimary @attributes="BtnPolyAttributes"
+               class="btn btn_poly active">
+              Book Room
+          </BtnPrimary>
+             <BtnPrimary @attributes="BtnPolyDisabledAttributes">
+              Book Room
+          </BtnPrimary>
+        </div>
+
+        <div class="pill">
+                <BtnPrimary @attributes="BtnPillAttributes">
+              Book Room
+          </BtnPrimary>
+              <BtnPrimary @attributes="BtnPillAttributes" class="btn btn_pill active">
+              Book Room
+          </BtnPrimary>
+              <BtnPrimary @attributes="BtnPillDisabledAttributes">
+              Book Room
+          </BtnPrimary>
         </div>
     </div>
 </section>
-@code {
 
+@code {
+public Dictionary<string, object> BtnMainAttributes {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn btn_main"},
+        {"Title", "Book room btn"},
+        {"type", "button"},
+        {"name", "btnSubmit"}
+    };
+
+public Dictionary<string, object> BtnPolyAttributes {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn btn_poly"},
+        {"Title", "Book room btn"},
+        {"type", "button"},
+        {"name", "btnSubmit"}
+    };
+
+    public Dictionary<string, object> BtnPillAttributes {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn btn_pill"},
+        {"Title", "Book room btn"},
+        {"type", "button"},
+        {"name", "btnSubmit"}
+    };
+
+    public Dictionary<string, object> BtnPillDisabledAttributes {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn btn_pill_disabled"},
+        {"Disabled", "true"},
+        {"type", "button"},
+        {"name", "btnSubmit"}
+    };
+
+public Dictionary<string, object> BtnPolyDisabledAttributes {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn btn_poly_disabled"},
+        {"type", "button"},
+        {"Disabled", "true"},
+    };
+
+
+public Dictionary<string, object> BtnDisabledAttributes {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn btn_disabled"},
+        {"Disabled", "true"},
+        {"type", "button"},
+        
+    };
 }

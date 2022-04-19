@@ -1,21 +1,37 @@
+@use './functions'as *;
 
-@use './functions' as *;
+@mixin btnPoly {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    width: 10em;
+    height: 10em;
+}
 
+@mixin BtnMainSize {
+    width: 15em;
+    height: 6em;
+}
 
-@mixin flow {
+@mixin BtnPill {
+    width: 10em;
+    padding: 1em;
+    border-radius: 5em;
+    background-color: transparent;
+   
     
 }
 
-@mixin txtTransform ($key: captalize){
+@mixin flow {}
+
+@mixin txtTransform ($key: captalize) {
     text-transform: $key;
 }
 
-@mixin  dynamicColor($color) {
+@mixin dynamicColor($color) {
     background: $color;
     color: text-clr($color);
 }
 
-@mixin transition-base{
+@mixin transition-base {
     transition: all .3s ease-in-out;
 }
 
@@ -27,22 +43,57 @@
     justify-content: center;
     align-items: center;
 }
+
 @mixin flex-column($direction: column, $justify:center, $align:center) {
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
-@mixin divider{
-    .small_divider{
+
+@mixin divider {
+    .small_divider {
         width: 9rem;
         height: .1rem;
         margin: 1 auto 1rem auto;
         background-color: var(--clr-accent-300);
     }
-    .big_divider{
+
+    .big_divider {
         width: 20rem;
         height: .1rem;
         background-color: var(--clr-accent-300);
 
+    }
+}
+
+@mixin after($content: "", $pos: absolute) {
+    position: relative;
+
+    &::after {
+        content: $content;
+        position: $pos;
+        @content;
+    }
+
+}
+
+@mixin hover-lift {
+    transition: transform 350ms ease-in-out;
+    box-shadow: 0 .25em .5em 0 rgba(black, .2);
+
+    @include after() {
+        box-shadow: 0 0 1.25em 0 rgba(black, .4);
+        transition: transform 350ms ease-in-out; //make variable
+        opacity: 0;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+        background-color: var(--btn-hover);
+
+        &:after {
+            opacity: 1;
+        }
     }
 }

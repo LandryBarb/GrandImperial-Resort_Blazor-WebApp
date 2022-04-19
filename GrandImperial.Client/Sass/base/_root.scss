@@ -48,22 +48,25 @@
     }
     /**End sPACING**/
 
-@each $prop, $colors, $shades in $custom-props
-{
-    @each $color, $shades, $value in $colors
-    {
-        @each $shade, $value in $shades
-        {
-            --#{$prop}:hsl(var(--clr-#{$color}-#{$shade}));
-        }
-    }
+// @each $prop, $colors, $shades in $custom-props
+// {
+//     @each $color, $shades, $value in $colors
+//     {
+//         @each $shade, $value in $shades
+//         {
+//             --#{$prop}:hsl(var(--clr-#{$color}-#{$shade}));
+//         }
+//     }
    
-}
+// }
 
-//    --body:var(--clr-primary-700);
-//    --link:var(--clr-primary-600);
-//    --link-accent:var(--clr-secondary-700);
+--body:hsl(var(--clr-primary-700));
+--bg:hsl(var(--clr-white-700));
+--link:hsl(var(--clr-link-700));
+--link-accent:hsl(var(--clr-secondary-700));
+--btn:hsl(var(--clr-secondary-600));
+--btn-hover:hsl(var(--clr-secondary-700));
+--btn-warning:hsl(var(--clr-warning-700));
 
-//    --button:var(--clr-secondary-700);
 }
 

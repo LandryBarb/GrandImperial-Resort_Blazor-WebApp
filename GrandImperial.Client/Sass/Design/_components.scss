@@ -7,18 +7,83 @@
     grid-template-columns:repeat(4, 1fr);
 
     .buttons{
-
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
         .yellow{
-
+            height: 30rem;
+            display: flex; 
+            @include flex-column($direction:column, $justify: space-evenly);
 
         }
-
+        .pill{
+            height: 30rem;
+            display: flex;
+            @include flex-column($direction:column, $justify:space-evenly);
+        }
         .btn{
-            width:15em;
-            height:6em;
+           
             display:grid;
             place-items:center;
-            background-color:var(--link-accent);
+            font-family: $ff-body;
+            font-weight: var(--fw-600);
+            cursor: pointer;
+         
+
+           
+            &_main{
+                @include BtnMainSize;
+                background-color: var(--btn);
+                @include hover-lift();
+                
+            }
+            &_disabled{
+               @include BtnMainSize;
+                background-color: hsl(var(--clr-primary-100) / .2);
+                color: rgba(black, .2);
+                cursor: not-allowed;
+            }
+
+            
+            &_pill{
+                @include BtnPill;
+                @include hover-lift();
+                @include txtTransform(uppercase);
+                border: 1px solid hsl(var(--clr-primary-700) /.2);
+
+            }
+            &_pill_disabled{
+                @include BtnPill;
+                border: 1px solid hsl(var(--clr-primary-700) /.2);
+                @include txtTransform(uppercase);
+                color: hsl(var(--clr-primary-100) / .2);
+                cursor: not-allowed;
+
+            }
+            &_poly{
+                background-color: var(--btn);
+                font-style: italic;
+           
+                @include btnPoly;
+                @include hover-lift();
+
+              
+            }
+            &_poly_disabled{
+                @include btnPoly;
+                font-style: italic;
+
+                background-color: hsl(var(--clr-primary-100) / .2);
+                color: rgba(black, .2);
+                cursor: not-allowed;
+            }
         }
+
+        .active{
+            background-color: var(--btn-hover);
+        }
+        
     }
 }
+

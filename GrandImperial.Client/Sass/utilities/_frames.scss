@@ -13,3 +13,8 @@
 margin-top: var(--flow-space, $spacing-base);
 }
 
+.disabled{
+    background-color: hsl(var(--clr-primary-100) / .2);
+    color: rgba(black, .2);
+    cursor: not-allowed;
+}

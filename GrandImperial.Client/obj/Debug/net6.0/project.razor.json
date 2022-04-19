@@ -265,6 +265,39 @@
         }
       },
       {
+        "HashCode": 1722004914,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DesignSystem"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem"
+        }
+      },
+      {
+        "HashCode": 2018557067,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Design.DesignSystem"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1826536866,
         "Kind": "Components.Component",
         "Name": "GrandImperial.Client.Features.Design.ComponentsPage",
@@ -298,35 +331,110 @@
         }
       },
       {
-        "HashCode": 1722004914,
+        "HashCode": -1305372541,
         "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary",
         "AssemblyName": "GrandImperial.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DesignSystem"
+            "TagName": "BtnPrimary"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "BtnMainAttributes",
+            "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+            "Metadata": {
+              "Common.PropertyName": "BtnMainAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem"
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary"
         }
       },
       {
-        "HashCode": 2018557067,
+        "HashCode": 1281809703,
         "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary",
         "AssemblyName": "GrandImperial.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GrandImperial.Client.Features.Design.DesignSystem"
+            "TagName": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "BtnMainAttributes",
+            "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+            "Metadata": {
+              "Common.PropertyName": "BtnMainAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1019902931,
+        "Kind": "Components.ChildContent",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary.ChildContent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "BtnPrimary"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -901456973,
+        "Kind": "Components.ChildContent",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary.ChildContent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13693,6 +13801,11 @@
     {
       "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Components\\Buttons\\BtnPrimary.razor",
+      "TargetPath": "Features\\Components\\Buttons\\BtnPrimary.razor",
       "FileKind": "component"
     },
     {
