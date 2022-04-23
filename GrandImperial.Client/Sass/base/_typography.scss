@@ -35,7 +35,7 @@ $type-ratio:("minorSecond": 1.067,
 $type-base-size: 1rem;
 
 
-$type-size-ratio:type-ratio("perfectFifth");
+$type-size-ratio:type-ratio("augmentedFourth");
 $type-size-ratio-sm:type-ratio("minorSecond");
 
 $type-levels:
@@ -55,6 +55,7 @@ $level-size:$type-base-size;
 $type-scale:(
     small:
         (
+            100: $level-size - ($type-size-ratio-sm/.5),
             200: $level-size * $type-size-ratio-sm,
             300:($level-size + .1rem) * $type-size-ratio-sm,
             400: ($level-size + .4rem) * $type-size-ratio-sm,
@@ -66,6 +67,7 @@ $type-scale:(
            
     ),
     large:(
+        100: $level-size - ($type-size-ratio/.5),
         200: $level-size * $type-size-ratio,
         300:($level-size + .1rem) * $type-size-ratio,
         400: ($level-size + .4rem) * $type-size-ratio,

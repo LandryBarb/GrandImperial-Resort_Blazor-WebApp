@@ -7,29 +7,29 @@
         <small>buttons</small>
         <div class="yellow">
 
-          <BtnPrimary @attributes="BtnMainAttributes">
+          <BtnPrimary @attributes="Btn" > 
               Book Room
           </BtnPrimary>
-           <BtnPrimary @attributes="BtnMainAttributes"
+
+           <BtnPrimary  @attributes="BtnSecondary" data-type="secondary">
+              Book Room
+          </BtnPrimary>
+
+
+           <BtnPrimary @attributes="BtnDisabled"
            >
-              Book Room
-          </BtnPrimary>
-           <BtnPrimary @attributes="BtnMainAttributes"
-            class="btn btn_main active">
-              Book Room
-          </BtnPrimary>
-           <BtnPrimary @attributes="BtnDisabledAttributes"
-            >
               Book Room
           </BtnPrimary>
         </div>
 
         <div class="poly">
-               <BtnPrimary @attributes="BtnPolyAttributes">
+               <BtnPrimary @attributes="BtnPolyAttributes"
+               data-type="poly">
               Book Room
           </BtnPrimary>
-               <BtnPrimary @attributes="BtnPolyAttributes"
-               class="btn btn_poly active">
+               <BtnPrimary @attributes="BtnPolyAttributes" 
+               data-type="poly"
+              >
               Book Room
           </BtnPrimary>
              <BtnPrimary @attributes="BtnPolyDisabledAttributes">
@@ -38,10 +38,11 @@
         </div>
 
         <div class="pill">
-                <BtnPrimary @attributes="BtnPillAttributes">
+                <BtnPrimary @attributes="BtnPillAttributes"
+                data-type="pill">
               Book Room
           </BtnPrimary>
-              <BtnPrimary @attributes="BtnPillAttributes" class="btn btn_pill active">
+              <BtnPrimary @attributes="BtnPillAttributes"  data-type="pill">
               Book Room
           </BtnPrimary>
               <BtnPrimary @attributes="BtnPillDisabledAttributes">
@@ -52,18 +53,23 @@
 </section>
 
 @code {
-public Dictionary<string, object> BtnMainAttributes {get;set;} = new Dictionary<string, object>()
+public Dictionary<string, object> Btn {get;set;} = new Dictionary<string, object>()
     {
-        {"class", "btn btn_main"},
-        {"Title", "Book room btn"},
+        {"class", "btn"},
         {"type", "button"},
         {"name", "btnSubmit"}
+    };
+
+    public Dictionary<string, object> BtnSecondary {get;set;} = new Dictionary<string, object>()
+    {
+        {"class", "btn"},
+        {"type", "button"},
+       //{"data-type", "secondary"}
     };
 
 public Dictionary<string, object> BtnPolyAttributes {get;set;} = new Dictionary<string, object>()
     {
         {"class", "btn btn_poly"},
-        {"Title", "Book room btn"},
         {"type", "button"},
         {"name", "btnSubmit"}
     };
@@ -71,14 +77,14 @@ public Dictionary<string, object> BtnPolyAttributes {get;set;} = new Dictionary<
     public Dictionary<string, object> BtnPillAttributes {get;set;} = new Dictionary<string, object>()
     {
         {"class", "btn btn_pill"},
-        {"Title", "Book room btn"},
+       
         {"type", "button"},
         {"name", "btnSubmit"}
     };
 
     public Dictionary<string, object> BtnPillDisabledAttributes {get;set;} = new Dictionary<string, object>()
     {
-        {"class", "btn btn_pill_disabled"},
+        {"class", "btn_pill_disabled"},
         {"Disabled", "true"},
         {"type", "button"},
         {"name", "btnSubmit"}
@@ -86,17 +92,18 @@ public Dictionary<string, object> BtnPolyAttributes {get;set;} = new Dictionary<
 
 public Dictionary<string, object> BtnPolyDisabledAttributes {get;set;} = new Dictionary<string, object>()
     {
-        {"class", "btn btn_poly_disabled"},
+        {"class", " btn_poly_disabled"},
         {"type", "button"},
         {"Disabled", "true"},
     };
 
 
-public Dictionary<string, object> BtnDisabledAttributes {get;set;} = new Dictionary<string, object>()
+public Dictionary<string, object> BtnDisabled {get;set;} = new Dictionary<string, object>()
     {
-        {"class", "btn btn_disabled"},
+        {"class", "btn_disabled"},
         {"Disabled", "true"},
         {"type", "button"},
+        
         
     };
 }

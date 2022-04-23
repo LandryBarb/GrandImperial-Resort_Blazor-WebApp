@@ -24,35 +24,76 @@
         }
         .btn{
            
-            display:grid;
-            place-items:center;
+            display:inline-block;
+            padding: 2em 3.25em;
             font-family: $ff-body;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 0;
             font-weight: var(--fw-600);
+            
+            text-align: center;
             cursor: pointer;
-         
+           background-color: var(--btn);
+           color: var(--body);
 
-           
-            &_main{
-                @include BtnMainSize;
-                background-color: var(--btn);
+            &:hover,
+            &:focus{
                 @include hover-lift();
-                
+
             }
-            &_disabled{
-               @include BtnMainSize;
+
+         
+            &[data-type="secondary"]{
+                background-color: hsl(var(--clr-primary-600));
+                color: var(--bg);
+
+                &:hover,
+                &:focus{
+                    @include hover-lift($link);
+    
+                }
+    
+
+
+            }
+            &[data-type="poly"]{
+                @include btnPoly;
+                font-style: italic;
+                
+            
+
+            }
+            &[data-type="pill"]{
+                @include BtnPill;
+                font-style: italic;
+                border: 1px solid hsl(var(--clr-primary-700) /.2);
+            }
+           
+            // &_main{
+            //     @include BtnMainSize;
+            //     background-color: var(--btn);
+            //     @include hover-lift( $primary);
+                
+            // }
+            &[data-type="disabled"]{
+              
+                
                 background-color: hsl(var(--clr-primary-100) / .2);
                 color: rgba(black, .2);
                 cursor: not-allowed;
+            text-align: center;
+
             }
 
             
-            &_pill{
-                @include BtnPill;
-                @include hover-lift();
-                @include txtTransform(uppercase);
-                border: 1px solid hsl(var(--clr-primary-700) /.2);
+            // &_pill{
+               
+            //     @include hover-lift($primary);
+            //     @include txtTransform(uppercase);
+              
 
-            }
+            // }
             &_pill_disabled{
                 @include BtnPill;
                 border: 1px solid hsl(var(--clr-primary-700) /.2);
@@ -61,22 +102,33 @@
                 cursor: not-allowed;
 
             }
-            &_poly{
-                background-color: var(--btn);
-                font-style: italic;
+            // &_poly{
+            //     background-color: var(--btn);
+            //     font-style: italic;
            
-                @include btnPoly;
-                @include hover-lift();
+               
+            //     @include hover-lift();
 
               
-            }
+            // }
             &_poly_disabled{
                 @include btnPoly;
                 font-style: italic;
-
+                
                 background-color: hsl(var(--clr-primary-100) / .2);
                 color: rgba(black, .2);
                 cursor: not-allowed;
+            text-align: center;
+
+            }
+            &_disabled{
+                @include BtnMainSize;
+                font-style: italic;
+                
+                background-color: hsl(var(--clr-primary-100) / .2);
+                color: rgba(black, .2);
+                cursor: not-allowed;
+            text-align: center;
             }
         }
 

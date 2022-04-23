@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OrUmbrJjaIOP05I1DpIPF9ewoqVpe5x5isGyn10IaYo=",
+  "Hash": "nPgh6oh7Uv7n2asi/BJrY1/NMOMLOHP8uSvoEiM9Eio=",
   "Source": "GrandImperial.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7410,6 +7410,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\HotelRooms\\suite2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\wwwroot\\images\\icons\\arrow-down.png",
+      "SourceId": "GrandImperial.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/icons/arrow-down.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\arrow-down.png"
+    },
+    {
+      "Identity": "C:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\wwwroot\\images\\icons\\arrow-right.png",
+      "SourceId": "GrandImperial.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/icons/arrow-right.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\arrow-right.png"
     },
     {
       "Identity": "C:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\wwwroot\\images\\icons\\facebook.png",

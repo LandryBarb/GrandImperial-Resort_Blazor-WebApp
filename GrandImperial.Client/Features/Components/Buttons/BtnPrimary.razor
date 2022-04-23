@@ -1,4 +1,4 @@
- <button @attributes="BtnMainAttributes">
+ <button @attributes="BtnMainAttributes" >
                 @ChildContent
 </button>
 
@@ -8,4 +8,6 @@
     public Dictionary<string, object> BtnMainAttributes{get;set;}
         [Parameter]
         public RenderFragment ChildContent {get;set;}
+
+      
 }

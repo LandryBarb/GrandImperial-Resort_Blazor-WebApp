@@ -3,7 +3,15 @@
 
 
 $dark: hsl(230, 20%, 15%);
-$light: hsl(60, 11%, 88%);
+$light: hsl(40 100% 98%);
 $accent: hsl(218, 82%, 15%);
 
 $bg: $dark;
+
+
+$primary: hsl(150 13% 22%);
+$secondary:hsl(46 97% 63%);
+$error: hsl(0 48% 47%);
+$warning: hsl(36 70% 54%);
+$success: hsl(154 37% 26%);
+$link: hsl(170 36% 14%);

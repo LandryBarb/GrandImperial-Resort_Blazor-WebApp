@@ -8,39 +8,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 641554235,
-        "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Home.HomePage",
-        "AssemblyName": "GrandImperial.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "HomePage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Home.HomePage"
-        }
-      },
-      {
-        "HashCode": -2127962882,
-        "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Home.HomePage",
-        "AssemblyName": "GrandImperial.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GrandImperial.Client.Features.Home.HomePage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Home.HomePage",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1920546785,
         "Kind": "Components.Component",
         "Name": "GrandImperial.Client.Features.Home.HotelRoomCard",
@@ -169,6 +136,39 @@
         }
       },
       {
+        "HashCode": 641554235,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Home.HomePage",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "HomePage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Home.HomePage"
+        }
+      },
+      {
+        "HashCode": -2127962882,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Home.HomePage",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Home.HomePage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Home.HomePage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -93691494,
         "Kind": "Components.Component",
         "Name": "GrandImperial.Client.Features.Layout.MainLayout",
@@ -261,72 +261,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "GrandImperial.Client.Features.Layout.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1722004914,
-        "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
-        "AssemblyName": "GrandImperial.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DesignSystem"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem"
-        }
-      },
-      {
-        "HashCode": 2018557067,
-        "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
-        "AssemblyName": "GrandImperial.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GrandImperial.Client.Features.Design.DesignSystem"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1826536866,
-        "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Design.ComponentsPage",
-        "AssemblyName": "GrandImperial.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ComponentsPage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Design.ComponentsPage"
-        }
-      },
-      {
-        "HashCode": 634240293,
-        "Kind": "Components.Component",
-        "Name": "GrandImperial.Client.Features.Design.ComponentsPage",
-        "AssemblyName": "GrandImperial.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GrandImperial.Client.Features.Design.ComponentsPage"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "GrandImperial.Client.Features.Design.ComponentsPage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -435,6 +369,245 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.BtnPrimary.ChildContent",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 514687972,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.ButtonComp",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ButtonComp"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "isDisabled",
+            "TypeName": "System.Boolean?",
+            "Metadata": {
+              "Common.PropertyName": "isDisabled"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DataType",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "DataType"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.ButtonComp"
+        }
+      },
+      {
+        "HashCode": 1232782159,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.ButtonComp",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Components.Buttons.ButtonComp"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Class",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Class"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "isDisabled",
+            "TypeName": "System.Boolean?",
+            "Metadata": {
+              "Common.PropertyName": "isDisabled"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DataType",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "DataType"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.ButtonComp",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -115880840,
+        "Kind": "Components.ChildContent",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.ButtonComp.ChildContent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "ButtonComp"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.ButtonComp.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 2015595831,
+        "Kind": "Components.ChildContent",
+        "Name": "GrandImperial.Client.Features.Components.Buttons.ButtonComp.ChildContent",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "GrandImperial.Client.Features.Components.Buttons.ButtonComp"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "GrandImperial.Client.Features.Components.Buttons.ButtonComp.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1826536866,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Design.ComponentsPage",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ComponentsPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Design.ComponentsPage"
+        }
+      },
+      {
+        "HashCode": 634240293,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Design.ComponentsPage",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Design.ComponentsPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Design.ComponentsPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1722004914,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DesignSystem"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem"
+        }
+      },
+      {
+        "HashCode": 2018557067,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Design.DesignSystem",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Design.DesignSystem"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Design.DesignSystem",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -55724753,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Forms.Login",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Forms.Login"
+        }
+      },
+      {
+        "HashCode": -870693741,
+        "Kind": "Components.Component",
+        "Name": "GrandImperial.Client.Features.Forms.Login",
+        "AssemblyName": "GrandImperial.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GrandImperial.Client.Features.Forms.Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "GrandImperial.Client.Features.Forms.Login",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13819,6 +13992,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Components\\Buttons\\ButtonComp.razor",
+      "TargetPath": "Features\\Components\\Buttons\\ButtonComp.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Layout\\MainLayout.razor",
       "TargetPath": "Features\\Layout\\MainLayout.razor",
       "FileKind": "component"
@@ -13832,6 +14010,11 @@
       "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\Landry Barb II\\Documents\\WebDevelopment\\Blazor\\PortfolioProjects\\FrontEnd\\GrandImperial\\GrandImperial.Client\\Features\\Forms\\Login.razor",
+      "TargetPath": "Features\\Forms\\Login.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"

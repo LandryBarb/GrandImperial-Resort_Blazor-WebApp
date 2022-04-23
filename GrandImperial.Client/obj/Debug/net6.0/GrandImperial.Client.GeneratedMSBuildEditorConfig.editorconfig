@@ -26,12 +26,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ29tcG9uZW50c1xCdXR0b25zXEJ0blByaW1hcnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Components/Buttons/ButtonComp.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ29tcG9uZW50c1xCdXR0b25zXEJ1dHRvbkNvbXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Design/ComponentsPage.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGVzaWduXENvbXBvbmVudHNQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Design/DesignSystem.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGVzaWduXERlc2lnblN5c3RlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Forms/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRm9ybXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Landry Barb II/Documents/WebDevelopment/Blazor/PortfolioProjects/FrontEnd/GrandImperial/GrandImperial.Client/Features/Home/HomePage.razor]
